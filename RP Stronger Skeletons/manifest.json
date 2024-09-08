@@ -1,0 +1,45 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Stronger Skeletons",
+		"description": "Spawn stronger skeletons to enhance combat! \n§b1.21.23§ \n§gEnable: §cExperiments!",
+		"uuid": "11cb77d7-b213-48ea-a4d2-9b0d5b26d685",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			21,
+			20
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "3e70576a-0352-4ddd-9b19-2110b8f3f25c",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+
+	"dependencies": [
+
+	],
+
+	"metadata": {
+		"generated_with": {
+			"blockbench_block_wizard": [
+				"1.2.1",
+				"1.2.2"
+			],
+			"blockbench_entity_wizard": [
+				"1.4.0"
+			]
+		}
+	}
+}

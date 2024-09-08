@@ -1,0 +1,61 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:skeleton",
+      "min_engine_version": "1.8.0",
+
+      "materials": {
+        "default": "skeleton",
+        "enchanted": "entity_enchant"
+      },
+
+      "textures": {
+        "default": "textures/entity/skeleton/skeleton",
+        "one": "textures/entity/faithful-creeper",
+        "enchanted": "textures/glint/enchanted_entity_glint_deep_purple"
+      },
+
+      "geometry": {
+        "default": "geometry.skeleton.v1.8"
+      },
+
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 9
+      },
+
+      "scripts": {
+        "pre_animation": [
+          "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+        ]
+      },
+
+      "animations": {
+        "look_at_target_default": "animation.humanoid.look_at_target.default",
+        "look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
+        "look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
+        "move": "animation.humanoid.move",
+        "riding.arms": "animation.humanoid.riding.arms",
+        "riding.legs": "animation.humanoid.riding.legs",
+        "holding": "animation.humanoid.holding",
+        "charging": "animation.humanoid.charging",
+        "attack.rotations": "animation.humanoid.attack.rotations",
+        "sneaking": "animation.humanoid.sneaking",
+        "damage_nearby_mobs": "animation.humanoid.damage_nearby_mobs",
+        "bow_and_arrow": "animation.humanoid.bow_and_arrow",
+        "swimming": "animation.zombie.swimming",
+        "skeleton_attack": "animation.skeleton.attack"
+      },
+
+      "render_controllers": [
+        "controller.render.skeleton",
+        {
+          "controller.render.enchanted_skeleton": "q.variant == 3"
+        }
+      ],
+      
+      "enable_attachables": true
+    }
+  }
+}

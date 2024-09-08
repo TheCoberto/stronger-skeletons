@@ -1,0 +1,57 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "ss:creeper_archer",
+        "is_spawnable": true,
+        "is_summonable": true,
+        "is_experimental": false
+      },
+      "component_groups": {
+        "minecraft:creeper_archer": {
+          "minecraft:type_family": {
+            "family": [ "creeper", "monster" ]
+          },
+          "minecraft:health": {
+            "value": 20,
+            "max": 20
+          },
+          "minecraft:attack": {
+            "damage": 3
+          },
+          "minecraft:shooter": {
+            "def": "minecraft:arrow",
+            "type": "arrow",
+            "burst_shots": 3,
+            "burst_interval": 0.2
+          },
+          "minecraft:equipment": {
+            "table": "loot_tables/entities/creeper_archer_equipment.json"
+          },
+          "minecraft:movement": {
+            "value": 0.25
+          }
+        }
+      },
+      "components": {
+        "minecraft:behavior.ranged_attack": {
+          "priority": 0,
+          "attack_interval_min": 3,
+          "attack_interval_max": 5,
+          "attack_radius": 15,
+          "burst_shots": 3,
+          "burst_interval": 0.2
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "entity_types": [
+            {
+              "filters": { "test": "is_family", "subject": "other", "value": "player" },
+              "max_dist": 16
+            }
+          ]
+        }
+      },
+      "events": {}
+    }
+  }

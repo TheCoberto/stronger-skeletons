@@ -16,7 +16,14 @@
         "skin_2": {
           "minecraft:variant": {
             "value": 2
-          }
+          },
+          "minecraft:health": {
+            "value": 10,
+            "max": 10
+          },
+          "minecraft:experience_reward": {
+            "on_death": 125
+          },
         },
         "skin_3": {
           "minecraft:variant": {
@@ -342,7 +349,7 @@
                   "minecraft:ranged_attack"
                 ]
               },
-              "weight": 50
+              "weight": 25
             },
             {
               "add": {

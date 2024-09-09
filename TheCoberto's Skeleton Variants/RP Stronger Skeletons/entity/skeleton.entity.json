@@ -12,7 +12,7 @@
 
       "textures": {
         "default": "textures/entity/skeleton/skeleton",
-        "one": "textures/entity/skeleton_cotton_candy",
+        "cottoncandy": "textures/entity/skeleton_cotton_candy",
         "enchanted": "textures/glint/enchanted_entity_glint_deep_purple"
       },
 

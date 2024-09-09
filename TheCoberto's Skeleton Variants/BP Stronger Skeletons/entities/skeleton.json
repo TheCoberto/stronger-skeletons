@@ -23,7 +23,7 @@
           },
           "minecraft:experience_reward": {
             "on_death": 125
-          },
+          }
         },
         "skin_3": {
           "minecraft:variant": {

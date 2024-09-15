@@ -20,10 +20,15 @@
             "on_death": 125
           },
           "minecraft:equipment": {
-            "table": "loot_tables/entities/skeleton_gear.json"
+            "table": "loot_tables/entities/skeleton_cotton_candy_gear.json"
           },
           "minecraft:movement": {
             "value": 0.50
+          },
+          "minecraft:behavior.melee_attack": {
+            "priority": 1,
+            "target_dist": 1.5,
+            "track_target": true
           }
         },
         "skin_2": {
@@ -54,16 +59,10 @@
           "minecraft:loot": {
             "table": "loot_tables/entities/enchanted_mobs/enchanted_skeleton.json"
           },
-          "minecraft:behavior.ranged_attack": {
-            "attack_interval_min": 3,
-            "burst_shots": 12,
-            "burst_interval": 1.2,
-            "attack_interval_max": 5,
-            "attack_radius": 15
-          },
-          "minecraft:shooter": {
-            "type": "Arrow",
-            "def": "minecraft:arrow"
+          "minecraft:behavior.melee_attack": {
+            "priority": 1,
+            "target_dist": 1.5,
+            "track_target": true
           },
           "minecraft:environment_sensor": {
             "triggers": {
@@ -77,7 +76,7 @@
             }
           },
           "minecraft:equipment": {
-            "table": "loot_tables/entities/skeleton_gear.json"
+            "table": "loot_tables/entities/skeleton_cotton_candy_gear.json"
           },
           "minecraft:movement": {
             "value": 0.50

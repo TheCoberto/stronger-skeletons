@@ -4,7 +4,6 @@
     "description": {
       "identifier": "minecraft:skeleton",
       "min_engine_version": "1.8.0",
-
       "materials": {
         "default": "skeleton",
         "enchanted": "entity_enchant"

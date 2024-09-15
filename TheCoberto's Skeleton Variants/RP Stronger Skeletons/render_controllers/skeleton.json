@@ -5,8 +5,8 @@
       "arrays": {
         "textures": {
           "array.skins": [
-            "Texture.cottoncandy",
-            "Texture.default"
+            "Texture.default",
+            "Texture.cottoncandy"
           ]
         }
       },

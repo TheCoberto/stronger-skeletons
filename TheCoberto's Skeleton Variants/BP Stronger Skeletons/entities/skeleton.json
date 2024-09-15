@@ -30,14 +30,54 @@
             "value": 3
           },
           "minecraft:health": {
-            "value": 40,
-            "max": 40
+            "value": 50,
+            "max": 50
           },
           "minecraft:attack": {
             "damage": 20
           },
           "minecraft:experience_reward": {
             "on_death": 250
+          },
+          "minecraft:loot": {
+            "table": "loot_tables/entities/enchanted_mobs/enchanted_skeleton.json"
+          },
+          "minecraft:behavior.ranged_attack": {
+            "attack_interval_min": 3,
+            "burst_shots": 12,
+            "burst_interval": 1.2,
+            "attack_interval_max": 5,
+            "attack_radius": 15
+          },
+          "minecraft:shooter": {
+            "type": "Arrow",
+            "def": "minecraft:arrow"
+          },
+          "minecraft:environment_sensor": {
+            "triggers": {
+              "filters": {
+                "test": "is_underwater",
+                "subject": "self",
+                "operator": "==",
+                "value": true
+              },
+              "event": "minecraft:melee_mode"
+            }
+          }
+        },
+        "skin_4": {
+          "minecraft:variant": {
+            "value": 4
+          },
+          "minecraft:health": {
+            "value": 20,
+            "max": 20
+          },
+          "minecraft:attack": {
+            "damage": 20
+          },
+          "minecraft:experience_reward": {
+            "on_death": 500
           },
           "minecraft:loot": {
             "table": "loot_tables/entities/enchanted_mobs/enchanted_skeleton.json"
@@ -340,7 +380,7 @@
                   "minecraft:ranged_attack"
                 ]
               },
-              "weight": 50
+              "weight": 75
             },
             {
               "add": {
@@ -357,7 +397,15 @@
                   "skin_3"
                 ]
               },
-              "weight": 25
+              "weight": 10
+            },
+            {
+              "add": {
+                "component_groups": [
+                  "skin_4"
+                ]
+              },
+              "weight": 5
             }
           ]
         },

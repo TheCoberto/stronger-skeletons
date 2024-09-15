@@ -3,7 +3,7 @@
 	"header": {
 		"name": "Skeleton Variants",
 		"description": "Spawns new types of skeletons to enhance gameplay! \n§b1.21.23",
-		"uuid": "9eaddda8-b4fc-4cde-82ab-1ecdc9e96823",
+		"uuid": "ce65df6f-09c4-4acd-b1b3-8a6b0bf1619c",
 		"version": [
 			1,
 			0,
@@ -25,8 +25,8 @@
 	],
 	"dependencies": [
 		{
-			"uuid": "11cb77d7-b213-48ea-a4d2-9b0d5b26d685",
-			"version": [1, 0, 0]
+			"uuid": "5f2709be-a96f-449f-9521-7b8f02342c98",
+			"version": [ 1, 0, 0 ]
 		},
 		{
 			"module_name": "@minecraft/server",

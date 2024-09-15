@@ -18,11 +18,23 @@
           },
           "minecraft:experience_reward": {
             "on_death": 125
+          },
+          "minecraft:equipment": {
+            "table": "loot_tables/entities/skeleton_gear.json"
+          },
+          "minecraft:movement": {
+            "value": 0.50
           }
         },
         "skin_2": {
           "minecraft:variant": {
             "value": 2
+          },
+          "minecraft:equipment": {
+            "table": "loot_tables/entities/skeleton_gear.json"
+          },
+          "minecraft:movement": {
+            "value": 0.25
           }
         },
         "skin_3": {
@@ -63,6 +75,12 @@
               },
               "event": "minecraft:melee_mode"
             }
+          },
+          "minecraft:equipment": {
+            "table": "loot_tables/entities/skeleton_gear.json"
+          },
+          "minecraft:movement": {
+            "value": 0.50
           }
         },
         "skin_4": {
@@ -103,16 +121,40 @@
               },
               "event": "minecraft:melee_mode"
             }
+          },
+          "minecraft:equipment": {
+            "table": "loot_tables/entities/skeleton_gear.json"
+          },
+          "minecraft:movement": {
+            "value": 0.25
           }
         },
         "skin_5": {
           "minecraft:variant": {
             "value": 5
+          },
+          "minecraft:equipment": {
+            "table": "loot_tables/entities/creeper_archer_gear.json"
+          },
+          "minecraft:movement": {
+            "value": 0.25
+          },
+          "minecraft:experience_reward": {
+            "on_death": 250
           }
         },
         "skin_6": {
           "minecraft:variant": {
             "value": 6
+          },
+          "minecraft:equipment": {
+            "table": "loot_tables/entities/creeper_archer_gear.json"
+          },
+          "minecraft:movement": {
+            "value": 0.25
+          },
+          "minecraft:experience_reward": {
+            "on_death": 500
           }
         },
         "minecraft:lightning_immune": {
@@ -157,9 +199,6 @@
           "minecraft:shooter": {
             "type": "Arrow",
             "def": "minecraft:arrow"
-          },
-          "minecraft:movement": {
-            "value": 0.25
           },
           "minecraft:navigation.walk": {
             "is_amphibious": true,
@@ -277,9 +316,6 @@
         "minecraft:jump.static": {},
         "minecraft:can_climb": {},
         "minecraft:nameable": {},
-        "minecraft:equipment": {
-          "table": "loot_tables/entities/skeleton_gear.json"
-        },
         "minecraft:shooter": {
           "type": "Arrow",
           "def": "minecraft:arrow"

@@ -1,8 +1,8 @@
 {
 	"format_version": 2,
 	"header": {
-		"name": "Stronger Skeletons",
-		"description": "Spawn stronger skeletons to enhance combat! \n§b1.21.23§ \n§gEnable: §cExperiments!",
+		"name": "Skeleton Variants",
+		"description": "Spawns new types of skeletons to enhance gameplay! \n§b1.21.23§",
 		"uuid": "11cb77d7-b213-48ea-a4d2-9b0d5b26d685",
 		"version": [
 			1,

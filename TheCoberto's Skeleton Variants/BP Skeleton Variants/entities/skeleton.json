@@ -141,6 +141,9 @@
           },
           "minecraft:experience_reward": {
             "on_death": 250
+          },
+          "minecraft:loot": {
+            "table": "loot_tables/entities/creeper_archer_drops.json"
           }
         },
         "skin_6": {
@@ -155,6 +158,9 @@
           },
           "minecraft:experience_reward": {
             "on_death": 500
+          },
+          "minecraft:loot": {
+            "table": "loot_tables/entities/creeper_archer_drops.json"
           }
         },
         "minecraft:lightning_immune": {

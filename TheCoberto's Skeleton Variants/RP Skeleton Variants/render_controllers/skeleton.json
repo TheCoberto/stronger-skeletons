@@ -6,7 +6,12 @@
         "textures": {
           "array.skins": [
             "Texture.default",
-            "Texture.cottoncandy"
+            "Texture.cotton_candy",
+            "Texture.default",
+            "Texture.cotton_candy",
+            "Texture.default",
+            "Texture.creeper_archer",
+            "Texture.creeper_archer"
           ]
         }
       },

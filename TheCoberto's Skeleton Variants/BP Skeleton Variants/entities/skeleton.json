@@ -105,6 +105,16 @@
             }
           }
         },
+        "skin_5": {
+          "minecraft:variant": {
+            "value": 5
+          }
+        },
+        "skin_6": {
+          "minecraft:variant": {
+            "value": 6
+          }
+        },
         "minecraft:lightning_immune": {
           "minecraft:damage_sensor": {
             "triggers": {
@@ -380,7 +390,7 @@
                   "minecraft:ranged_attack"
                 ]
               },
-              "weight": 25
+              "weight": 5
             },
             {
               "add": {
@@ -389,7 +399,7 @@
                   "minecraft:ranged_attack"
                 ]
               },
-              "weight": 75
+              "weight": 70
             },
             {
               "add": {
@@ -405,7 +415,23 @@
                   "skin_4"
                 ]
               },
+              "weight": 5
+            },
+            {
+              "add": {
+                "component_groups": [
+                  "skin_5"
+                ]
+              },
               "weight": 10
+            },
+            {
+              "add": {
+                "component_groups": [
+                  "skin_6"
+                ]
+              },
+              "weight": 5
             }
           ]
         },

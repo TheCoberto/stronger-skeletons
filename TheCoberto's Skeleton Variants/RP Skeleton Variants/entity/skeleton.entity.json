@@ -12,9 +12,11 @@
 
       "textures": {
         "default": "textures/entity/skeleton/skeleton",
-        "cottoncandy": "textures/entity/skeleton_cotton_candy",
+        "cotton_candy": "textures/entity/skeleton_cotton_candy",
         "enchanted": "textures/glint/enchanted_entity_glint_deep_purple",
-        "cottoncandy_enchanted": "textures/glint/enchanted_entity_glint_pinkish_purple"
+        "cottoncandy_enchanted": "textures/glint/enchanted_entity_glint_pinkish_purple",
+        "creeper_archer": "textures/entity/creeper_archer",
+        "creeper_archer_enchanted": "textures/glint/enchanted_entity_glint_white"
       },
 
       "geometry": {
@@ -52,7 +54,7 @@
       "render_controllers": [
         "controller.render.skeleton",
         {
-          "controller.render.enchanted_skeleton": "q.variant == 3 || q.variant == 4"
+          "controller.render.enchanted_skeleton": "q.variant == 3 || q.variant == 4 || q.variant == 6"
         }
       ],
 

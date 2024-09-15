@@ -30,8 +30,8 @@
       },
       "uv_anim": {
         "offset": [
-          "(q.mark_variant == 3 || q.mark_variant == 4) ? (Math.floor(query.life_time * 20.0) + query.frame_alpha) * -0.02 : 0.0",
-          "(q.mark_variant == 3 || q.mark_variant == 4) ? (Math.floor(query.life_time * 20.0) + query.frame_alpha) * 0.03 : 0.0"
+          "(q.mark_variant == 3 || q.mark_variant == 4 || q.mark_variant == 6) ? (Math.floor(query.life_time * 20.0) + query.frame_alpha) * -0.02 : 0.0",
+          "(q.mark_variant == 3 || q.mark_variant == 4 || q.mark_variant == 6) ? (Math.floor(query.life_time * 20.0) + query.frame_alpha) * 0.03 : 0.0"
         ],
         "scale": [
           1.0,
@@ -64,8 +64,8 @@
       },
       "uv_anim": {
         "offset": [
-          "(q.variant == 3 || q.variant == 4) ? (Math.floor(query.life_time * 20.0) + query.frame_alpha) * -0.02 : 0.0",
-          "(q.variant == 3 || q.variant == 4) ? (Math.floor(query.life_time * 20.0) + query.frame_alpha) * 0.03 : 0.0"
+          "(q.variant == 3 || q.variant == 4 || q.variant == 6) ? (Math.floor(query.life_time * 20.0) + query.frame_alpha) * -0.02 : 0.0",
+          "(q.variant == 3 || q.variant == 4 || q.variant == 6) ? (Math.floor(query.life_time * 20.0) + query.frame_alpha) * 0.03 : 0.0"
         ],
         "scale": [
           1.0,

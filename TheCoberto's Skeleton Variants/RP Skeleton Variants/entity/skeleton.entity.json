@@ -12,7 +12,8 @@
       "textures": {
         "default": "textures/entity/skeleton/skeleton",
         "cotton_candy": "textures/entity/skeleton_cotton_candy",
-        "creeper_archer": "textures/entity/creeper_archer"
+        "creeper_archer": "textures/entity/creeper_archer",
+        "oogas_brother": "textures/entity/oogas_brother"
       },
 
       "geometry": {

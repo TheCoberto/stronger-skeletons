@@ -8,6 +8,7 @@
         "is_experimental": false
       },
       "component_groups": {
+        // Cotton Candy
         "skin_1": {
           "minecraft:variant": {
             "value": 1
@@ -31,6 +32,7 @@
             "track_target": true
           }
         },
+        // Default
         "skin_2": {
           "minecraft:variant": {
             "value": 2
@@ -42,6 +44,7 @@
             "value": 0.25
           }
         },
+        // Cotton Candy Enchanted
         "skin_3": {
           "minecraft:variant": {
             "value": 3
@@ -82,6 +85,7 @@
             "value": 0.50
           }
         },
+        // Default Enchanted
         "skin_4": {
           "minecraft:variant": {
             "value": 4
@@ -128,6 +132,7 @@
             "value": 0.25
           }
         },
+        // Creeper Archer
         "skin_5": {
           "minecraft:variant": {
             "value": 5
@@ -145,6 +150,7 @@
             "table": "loot_tables/entities/creeper_archer_drops.json"
           }
         },
+        // Creeper Archer Enchanted
         "skin_6": {
           "minecraft:variant": {
             "value": 6
@@ -162,6 +168,25 @@
             "table": "loot_tables/entities/creeper_archer_drops.json"
           }
         },
+        // Ooga's Brother
+        "skin_7": {
+          "minecraft:variant": {
+            "value": 7
+          },
+          "minecraft:equipment": {
+            "table": "loot_tables/entities/oogas_brother_gear.json"
+          },
+          "minecraft:movement": {
+            "value": 0.10
+          },
+          "minecraft:experience_reward": {
+            "on_death": 500
+          },
+          "minecraft:loot": {
+            "table": "loot_tables/entities/oogas_brother_drops.json"
+          }
+        },
+        // All Skeletons
         "minecraft:lightning_immune": {
           "minecraft:damage_sensor": {
             "triggers": {
@@ -427,7 +452,7 @@
             {
               "add": {
                 "component_groups": [
-                  "skin_1",
+                  "skin_1", // Cotton Candy
                   "minecraft:ranged_attack"
                 ]
               },
@@ -436,16 +461,24 @@
             {
               "add": {
                 "component_groups": [
-                  "skin_2",
+                  "skin_2", // Default
                   "minecraft:ranged_attack"
                 ]
               },
-              "weight": 70
+              "weight": 50
             },
             {
               "add": {
                 "component_groups": [
-                  "skin_3"
+                  "skin_3" // Cotton Candy Enchanted
+                ]
+              },
+              "weight": 2
+            },
+            {
+              "add": {
+                "component_groups": [
+                  "skin_4" // Default Enchanted
                 ]
               },
               "weight": 5
@@ -453,7 +486,15 @@
             {
               "add": {
                 "component_groups": [
-                  "skin_4"
+                  "skin_5" // Creeper Archer
+                ]
+              },
+              "weight": 2
+            },
+            {
+              "add": {
+                "component_groups": [
+                  "skin_6" // Creeper Archer Enchanted
                 ]
               },
               "weight": 5
@@ -461,27 +502,13 @@
             {
               "add": {
                 "component_groups": [
-                  "skin_5"
+                  "skin_7", // Ooga's Brother
+                  "minecraft:melee_attack"
                 ]
               },
-              "weight": 10
-            },
-            {
-              "add": {
-                "component_groups": [
-                  "skin_6"
-                ]
-              },
-              "weight": 5
+              "weight": 1
             }
           ]
-        },
-        "minecraft:spring_trap": {
-          "add": {
-            "component_groups": [
-              "minecraft:lightning_immune"
-            ]
-          }
         },
         "minecraft:melee_mode": {
           "remove": {

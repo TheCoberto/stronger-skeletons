@@ -25,11 +25,6 @@
           },
           "minecraft:movement": {
             "value": 0.50
-          },
-          "minecraft:behavior.melee_attack": {
-            "priority": 1,
-            "target_dist": 1.5,
-            "track_target": true
           }
         },
         // Default
@@ -53,30 +48,11 @@
             "value": 20,
             "max": 20
           },
-          "minecraft:attack": {
-            "damage": 20
-          },
           "minecraft:experience_reward": {
-            "on_death": 500
+            "on_death": 250
           },
           "minecraft:loot": {
             "table": "loot_tables/entities/enchanted_mobs/enchanted_skeleton.json"
-          },
-          "minecraft:behavior.melee_attack": {
-            "priority": 1,
-            "target_dist": 1.5,
-            "track_target": true
-          },
-          "minecraft:environment_sensor": {
-            "triggers": {
-              "filters": {
-                "test": "is_underwater",
-                "subject": "self",
-                "operator": "==",
-                "value": true
-              },
-              "event": "minecraft:melee_mode"
-            }
           },
           "minecraft:equipment": {
             "table": "loot_tables/entities/skeleton_cotton_candy_gear.json"
@@ -94,9 +70,6 @@
             "value": 50,
             "max": 50
           },
-          "minecraft:attack": {
-            "damage": 40
-          },
           "minecraft:experience_reward": {
             "on_death": 250
           },
@@ -104,15 +77,12 @@
             "table": "loot_tables/entities/enchanted_mobs/enchanted_skeleton.json"
           },
           "minecraft:behavior.ranged_attack": {
-            "attack_interval_min": 3,
-            "burst_shots": 12,
-            "burst_interval": 1.2,
-            "attack_interval_max": 5,
-            "attack_radius": 15
-          },
-          "minecraft:shooter": {
-            "type": "Arrow",
-            "def": "minecraft:arrow"
+            "attack_interval_min": 1,
+            "burst_shots": 5,
+            "burst_interval": 0.2,
+            "attack_interval_max": 2,
+            "attack_radius": 15,
+            "priority": 1
           },
           "minecraft:environment_sensor": {
             "triggers": {
@@ -144,7 +114,7 @@
             "value": 0.25
           },
           "minecraft:experience_reward": {
-            "on_death": 250
+            "on_death": 125
           },
           "minecraft:loot": {
             "table": "loot_tables/entities/creeper_archer_drops.json"
@@ -162,7 +132,7 @@
             "value": 0.25
           },
           "minecraft:experience_reward": {
-            "on_death": 500
+            "on_death": 250
           },
           "minecraft:loot": {
             "table": "loot_tables/entities/creeper_archer_drops.json"
@@ -180,7 +150,7 @@
             "value": 0.10
           },
           "minecraft:experience_reward": {
-            "on_death": 500
+            "on_death": 125
           },
           "minecraft:loot": {
             "table": "loot_tables/entities/oogas_brother_drops.json"
@@ -218,17 +188,6 @@
             "speed_multiplier": 1,
             "height_change_chance": 350,
             "goal_radius": 1.0
-          },
-          "minecraft:behavior.ranged_attack": {
-            "attack_interval_min": 3,
-            "burst_shots": 12,
-            "burst_interval": 1.2,
-            "attack_interval_max": 5,
-            "attack_radius": 15
-          },
-          "minecraft:shooter": {
-            "type": "Arrow",
-            "def": "minecraft:arrow"
           },
           "minecraft:navigation.walk": {
             "is_amphibious": true,
@@ -452,8 +411,7 @@
             {
               "add": {
                 "component_groups": [
-                  "skin_1", // Cotton Candy
-                  "minecraft:ranged_attack"
+                  "skin_1" // Cotton Candy
                 ]
               },
               "weight": 5
@@ -461,8 +419,7 @@
             {
               "add": {
                 "component_groups": [
-                  "skin_2", // Default
-                  "minecraft:ranged_attack"
+                  "skin_2" // Default
                 ]
               },
               "weight": 50
@@ -502,8 +459,7 @@
             {
               "add": {
                 "component_groups": [
-                  "skin_7", // Ooga's Brother
-                  "minecraft:melee_attack"
+                  "skin_7" // Ooga's Brother
                 ]
               },
               "weight": 1

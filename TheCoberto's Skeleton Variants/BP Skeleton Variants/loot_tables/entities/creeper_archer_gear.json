@@ -7,18 +7,10 @@
           "type": "item",
           "name": "minecraft:bow",
           "functions": [
+
             {
-              "function": "specific_enchants",
-              "enchants": [
-                {
-                  "id": "flame",
-                  "level": 1
-                },
-                {
-                  "function": "set_count",
-                  "count": 1
-                }
-              ]
+              "function": "set_count",
+              "count": 1
             }
           ]
         }

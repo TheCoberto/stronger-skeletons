@@ -19,8 +19,38 @@
       }
     },
     "component_groups": {
-      "spawn_item":{
-        "minecraft:instant_despawn":{}
+      "spawn_item": {
+        "minecraft:instant_despawn": {}
+      },
+      "thecoberto:impact": {
+        "minecraft:area_attack": {
+          "cause": "contact",
+          "damage_per_tick": 8, // Increased damage per tick for more impact
+          "damage_range": 6, // Increased range for a larger AoE
+          "entity_filter": {
+            "none_of": [
+              {
+                "test": "is_family",
+                "subject": "other",
+                "value": "item"
+              },
+              {
+                "test": "is_family",
+                "subject": "other",
+                "value": "inanimate"
+              }
+            ]
+          }
+        },
+        "minecraft:explode": {
+          "breaks_blocks": true, // Optionally allow it to break blocks
+          "fuse_length": 0.1,
+          "fuse_lit": true,
+          "power": 20, // Increased explosion power
+          "causes_fire": false,
+          "fire_affected_by_griefing": false,
+          "destroy_affected_by_griefing": false
+        }
       },
       "minecraft:player_arrow": {
         "minecraft:projectile": {
@@ -28,27 +58,26 @@
             "definition_event": {
               "affect_projectile": true,
               "event_trigger": {
-                  "event": "new:pickup_item",
-                  "target": "self"
+                "event": "new:pickup_item",
+                "target": "self"
               }
             },
             "impact_damage": {
-              "damage": 20,
+              "damage": 8,
               "knockback": true,
               "semi_random_diff_damage": true,
               "destroy_on_hit": false,
-              "max_critical_damage": 12,
-              "min_critical_damage": 9,
-              "power_multiplier": 0.97
+              "max_critical_damage": 2,
+              "min_critical_damage": 0,
+              "power_multiplier": 0.5
             },
             "stick_in_ground": {
-              "shake_time" : 0.35
+              "shake_time": 0.35
             },
-            "arrow_effect": {
-            }
+            "arrow_effect": {}
           },
           "hit_sound": "bow.hit",
-          "power": 20,
+          "power": 10,
           "gravity": 0.05,
           "uncertainty_base": 1,
           "uncertainty_multiplier": 0,
@@ -58,7 +87,6 @@
         }
       }
     },
-
     "components": {
       "minecraft:collision_box": {
         "width": 0.25,
@@ -67,39 +95,39 @@
       "minecraft:type_family": {
         "family": [ "arrow" ]
       },
-      "minecraft:scale":{
+      "minecraft:scale": {
         "value": 0.5
       },
-      "minecraft:physics": {
-      },
+      "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": false,
         "is_pushable_by_piston": true
       }
     },
-
     "events": {
-      "new:particle":{
-        "queue_command":{
-          "command":[
+      "new:particle": {
+        "queue_command": {
+          "command": [
             "particle minecraft:explosion_particle ~~~"
           ]
         }
       },
-      "new:pickup_item":{
+      "new:pickup_item": {
         "queue_command": {
           "command": [
-            "summon thecoberto:mini_nuke_explosive ~~~"
+            "summon thecoberto:mini_nuke_explosive ~~~",
+            "function effect/explosion"
           ]
         },
-        "remove":{
-          "component_groups":[
+        "remove": {
+          "component_groups": [
             "minecraft:player_arrow"
           ]
         },
-        "add":{
-          "component_groups":[
-            "spawn_item"
+        "add": {
+          "component_groups": [
+            "spawn_item",
+            "thecoberto:impact"
           ]
         }
       },
@@ -107,13 +135,11 @@
         "sequence": [
           {
             "add": {
-              "component_groups" : [ "minecraft:player_arrow" ]
-            
+              "component_groups": [ "minecraft:player_arrow" ]
             }
           }
         ]
       }
     }
-
   }
 }

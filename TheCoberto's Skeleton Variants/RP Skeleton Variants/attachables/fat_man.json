@@ -8,10 +8,10 @@
         "enchanted": "entity_alphatest_glint"
       },
       "textures": {
-        "default": "textures/items/mini_nuke",
-        "bow_pulling_0": "textures/items/explosive_bow_pulling_0",
-        "bow_pulling_1": "textures/items/explosive_bow_pulling_1",
-        "bow_pulling_2": "textures/items/explosive_bow_pulling_2",
+        "default": "textures/items/fat_man",
+        "bow_pulling_0": "textures/items/fat_man_pulling_0",
+        "bow_pulling_1": "textures/items/fat_man_pulling_1",
+        "bow_pulling_2": "textures/items/fat_man_pulling_2",
         "enchanted": "textures/misc/enchanted_item_glint"
       },
       "geometry": {

@@ -1,0 +1,168 @@
+{
+  "format_version": "1.20.40",
+  "sound_definitions": {
+    "thecoberto.effect.explosion.debris": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/effect/explosion/debris_0",
+        "sounds/effect/explosion/debris_1",
+        "sounds/effect/explosion/debris_2",
+        "sounds/effect/explosion/debris_3"
+      ]
+    },
+    "thecoberto.effect.explosion.distant": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/effect/explosion/distant_0",
+        "sounds/effect/explosion/distant_1",
+        "sounds/effect/explosion/distant_2",
+        "sounds/effect/explosion/distant_3"
+      ]
+    },
+    "thecoberto.effect.explosion.explode": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/effect/explosion/explode_0",
+        "sounds/effect/explosion/explode_1",
+        "sounds/effect/explosion/explode_2",
+        "sounds/effect/explosion/explode_3"
+      ]
+    },
+    "thecoberto.effect.explosion.indoors": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/effect/explosion/indoors_0",
+        "sounds/effect/explosion/indoors_1",
+        "sounds/effect/explosion/indoors_2",
+        "sounds/effect/explosion/indoors_3"
+      ]
+    },
+    "effect.creepy.scream": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/creepy/foxy_scream"
+      ]
+    },
+    "thecoberto.effect.gun.echo": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/effect/gun/echo_0",
+          "volume": 0.5
+        },
+        {
+          "name": "sounds/effect/gun/echo_1",
+          "volume": 0.5
+        },
+        {
+          "name": "sounds/effect/gun/echo_2",
+          "volume": 0.5
+        },
+        {
+          "name": "sounds/effect/gun/echo_3",
+          "volume": 0.5
+        }
+      ]
+    },
+    "thecoberto.effect.player.blind": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/effect/player/blind"
+      ]
+    },
+    "throwable.grenade.drop": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/throwable/grenade/drop"
+      ]
+    },
+    "throwable.grenade.throw": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/throwable/grenade/throw"
+      ]
+    },
+    "mob.uh_1.death": {
+      "__use_legacy_max_distance": "true",
+      "category": "hostile",
+      "min_distance": 100,
+      "sounds": [
+        {
+          "name": "sounds/mob/ghast/death",
+          "volume": 0.5
+        }
+      ]
+    },
+    "mob.uh_1.fireball": {
+      "__use_legacy_max_distance": "true",
+      "category": "hostile",
+      "sounds": [
+        "sounds/mob/ghast/fireball4"
+      ]
+    },
+    "mob.uh_1.moan": {
+      "__use_legacy_max_distance": "true",
+      "category": "hostile",
+      "min_distance": 100,
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/mob/ghast/moan1",
+          "volume": 0.5
+        },
+        {
+          "name": "sounds/mob/ghast/moan2",
+          "volume": 0.5
+        },
+        {
+          "name": "sounds/mob/ghast/moan3",
+          "volume": 0.5
+        },
+        {
+          "name": "sounds/mob/ghast/moan4",
+          "volume": 0.5
+        },
+        {
+          "name": "sounds/mob/ghast/moan5",
+          "volume": 0.5
+        },
+        {
+          "name": "sounds/mob/ghast/moan6",
+          "volume": 0.5
+        },
+        {
+          "name": "sounds/mob/ghast/moan7",
+          "volume": 0.5
+        }
+      ]
+    },
+    "mob.uh_1.scream": {
+      "__use_legacy_max_distance": "true",
+      "category": "hostile",
+      "min_distance": 100,
+      "sounds": [
+        {
+          "name": "sounds/mob/ghast/scream1",
+          "volume": 0.5
+        },
+        {
+          "name": "sounds/mob/ghast/scream2",
+          "volume": 0.5
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/mob/ghast/scream3",
+          "volume": 0.5
+        },
+        {
+          "name": "sounds/mob/ghast/scream4",
+          "volume": 0.5
+        },
+        {
+          "name": "sounds/mob/ghast/scream5",
+          "volume": 0.5
+        }
+      ]
+    }
+  }
+}

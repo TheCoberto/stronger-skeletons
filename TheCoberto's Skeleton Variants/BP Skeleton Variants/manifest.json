@@ -2,12 +2,12 @@
 	"format_version": 2,
 	"header": {
 		"name": "Skeleton Variants",
-		"description": "Spawns new types of skeletons to enhance gameplay! \n§b1.21.23",
-		"uuid": "ce65df6f-09c4-4acd-b1b3-8a6b0bf1619c",
+		"description": "Spawns new types of skeletons to enhance gameplay! \n§b1.21.31\nFat Man Update!",
+		"uuid": "6fad7949-49a9-4a5b-b19b-636837736194",
 		"version": [
 			1,
 			0,
-			0
+			1
 		],
 		"min_engine_version": [
 			1,
@@ -18,15 +18,15 @@
 	"modules": [
 		{
 			"description": "Behavior",
-			"version": [1, 0, 0],
+			"version": [1, 0, 1],
 			"uuid": "2e6be702-a799-d974-8e57-25806e012a64",
 			"type": "data"
 		}
 	],
 	"dependencies": [
 		{
-			"uuid": "5f2709be-a96f-449f-9521-7b8f02342c98",
-			"version": [ 1, 0, 0 ]
+			"uuid": "778cedae-56f3-4dcc-88a0-3ca8dfe63cb7",
+			"version": [ 1, 0, 1 ]
 		},
 		{
 			"module_name": "@minecraft/server",

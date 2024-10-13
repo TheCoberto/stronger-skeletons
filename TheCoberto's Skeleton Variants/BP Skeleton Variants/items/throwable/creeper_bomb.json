@@ -1,0 +1,37 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "thecoberto:creeper_bomb",
+      "menu_category": {
+        "category": "equipment",
+        "group": "itemGroup.name.throwables"
+      }
+    },
+    "components": {
+      "minecraft:cooldown": {
+        "category": "creeper_bomb",
+        "duration": 0.65
+      },
+      "minecraft:display_name": {
+        "value": "Creeper Bomb"
+      },
+      "minecraft:icon": "creeper_bomb",
+      "minecraft:projectile": {
+        "projectile_entity": "thecoberto:creeper_bomb_entity"
+      },
+      "minecraft:throwable": {
+        "do_swing_animation": true,
+        "launch_power_scale": 2
+      },
+      "minecraft:use_modifiers": {
+        "use_duration": 3600
+      },
+      "minecraft:tags": {
+        "tags": [
+          "is_grenade"
+        ]
+      }
+    }
+  }
+}

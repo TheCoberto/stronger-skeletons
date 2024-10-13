@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "thecoberto:levitation_arrow"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [
+      "SP#"
+    ],
+    "key": {
+      "P": {
+        "item": "minecraft:arrow"
+      },
+      "#": {
+        "item": "minecraft:blaze_powder"
+      },
+      "S": {
+        "item": "minecraft:feather"
+      }
+    },
+    "result": {
+      "item": "thecoberto:levitation_arrow",
+      "count": 1
+    }
+  }
+}

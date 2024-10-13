@@ -1,0 +1,27 @@
+{
+  "resource_pack_name": "Skeleton Variants RP",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "creeper_bomb": {
+      "textures": "textures/items/throwable/creeper_bomb"
+    },
+    "fat_man": {
+      "textures": "textures/items/fat_man.png"
+    },
+    "mini_nuke": {
+      "textures": "textures/items/mini_nuke.png"
+    },
+    "explosive_bow": {
+      "textures": "textures/items/explosive_bow.png"
+    },
+    "explosive_arrow": {
+      "textures": "textures/items/arrow/explosive_arrow.png"
+    },
+    "levitation_bow": {
+      "textures": "textures/items/levitation_bow.png"
+    },
+    "levitation_arrow": {
+      "textures": "textures/items/arrow/levitation_arrow.png"
+    }
+  }
+}

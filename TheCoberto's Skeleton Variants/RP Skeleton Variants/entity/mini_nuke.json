@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "thecoberto:mini_nuke",
+      "materials": {
+        "default": "arrow"
+      },
+      "textures": {
+        "default": "textures/items/mini_nuke"
+      },
+      "geometry": {
+        "default": "geometry.arrow_img"
+      },
+      "animations": {
+        "move": "animation.arrow.target_rotation"
+      },
+      "scripts": {
+        "animate": [
+          "move"
+        ]
+      },
+      "render_controllers": [ "controller.render.arrow" ]
+    }
+  }
+}

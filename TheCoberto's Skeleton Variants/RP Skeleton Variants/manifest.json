@@ -2,12 +2,12 @@
 	"format_version": 2,
 	"header": {
 		"name": "Skeleton Variants",
-		"description": "Spawns new types of skeletons to enhance gameplay! \n§b1.21.23",
-		"uuid": "5f2709be-a96f-449f-9521-7b8f02342c98",
+		"description": "Spawns new types of skeletons to enhance gameplay! \n§b1.21.31\nFat Man Update!",
+		"uuid": "778cedae-56f3-4dcc-88a0-3ca8dfe63cb7",
 		"version": [
 			1,
 			0,
-			0
+			1
 		],
 		"min_engine_version": [
 			1,
@@ -22,7 +22,7 @@
 			"version": [
 				1,
 				0,
-				0
+				1
 			]
 		}
 	],

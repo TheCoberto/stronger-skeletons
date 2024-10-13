@@ -18,7 +18,9 @@
         "creeper_archer": "textures/entity/creeper_archer",
         "creeper_archer_enchanted": "textures/glint/enchanted_entity_glint_white",
         "oogas_brother": "textures/entity/oogas_brother",
-        "stray_marauder": "textures/entity/stray_marauder"
+        "stray_marauder": "textures/entity/stray_marauder",
+        "nether_king": "textures/entity/nether_king",
+        "foxy":  "textures/entity/foxy"
       },
 
       "geometry": {

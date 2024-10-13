@@ -18,13 +18,22 @@
           "max": 10
         },
         "minecraft:experience_reward": {
-          "on_death": 125
+          "on_death": "query.last_hit_by_player ? 50 + (query.equipment_count * Math.Random(1,3)) : 0"
         },
         "minecraft:equipment": {
           "table": "loot_tables/entities/skeleton_cotton_candy_gear.json"
         },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/enchanted_mobs/enchanted_skeleton.json"
+        },
         "minecraft:movement": {
           "value": 0.50
+        },
+        "minecraft:shooter": {
+          "def": "thecoberto:levitation_arrow",
+          "projectile": {
+            "item": "thecoberto:levitation_arrow"
+          }
         }
       },
       // Default
@@ -42,7 +51,7 @@
           "value": 3
         },
         "minecraft:experience_reward": {
-          "on_death": 250
+          "on_death": "query.last_hit_by_player ? 100 + (query.equipment_count * Math.Random(1,3)) : 0"
         },
         "minecraft:loot": {
           "table": "loot_tables/entities/enchanted_mobs/enchanted_skeleton.json"
@@ -52,6 +61,12 @@
         },
         "minecraft:movement": {
           "value": 0.50
+        },
+        "minecraft:shooter": {
+          "def": "thecoberto:levitation_arrow",
+          "projectile": {
+            "item": "thecoberto:levitation_arrow"
+          }
         }
       },
       // Default Enchanted
@@ -64,7 +79,7 @@
           "max": 50
         },
         "minecraft:experience_reward": {
-          "on_death": 250
+          "on_death": "query.last_hit_by_player ? 100 + (query.equipment_count * Math.Random(1,3)) : 0"
         },
         "minecraft:loot": {
           "table": "loot_tables/entities/enchanted_mobs/enchanted_skeleton.json"
@@ -93,10 +108,16 @@
           "table": "loot_tables/entities/creeper_archer_gear.json"
         },
         "minecraft:experience_reward": {
-          "on_death": 125
+          "on_death": "query.last_hit_by_player ? 50 + (query.equipment_count * Math.Random(1,3)) : 0"
         },
         "minecraft:loot": {
           "table": "loot_tables/entities/creeper_archer_drops.json"
+        },
+        "minecraft:shooter": {
+          "def": "thecoberto:explosive_arrow",
+          "projectile": {
+            "item": "thecoberto:explosive_arrow"
+          }
         }
       },
       // Creeper Archer Enchanted
@@ -105,13 +126,28 @@
           "value": 6
         },
         "minecraft:equipment": {
-          "table": "loot_tables/entities/creeper_archer_gear.json"
+          "table": "loot_tables/entities/creeper_archer_enchanted_gear.json"
         },
         "minecraft:experience_reward": {
-          "on_death": 250
+          "on_death": "query.last_hit_by_player ? 100 + (query.equipment_count * Math.Random(1,3)) : 0"
         },
         "minecraft:loot": {
           "table": "loot_tables/entities/creeper_archer_drops.json"
+        },
+        "minecraft:shooter": {
+          "def": "thecoberto:creeper_bomb_entity",
+          "projectile": {
+            "item": "thecoberto:creeper_bomb_entity"
+          }
+        },
+        "minecraft:health": {
+          "value": 30,
+          "max": 30
+        },
+        "minecraft:behavior.ranged_attack": {
+          "attack_interval_min": 1,
+          "attack_interval_max": 3,
+          "attack_radius": 10
         }
       },
       // Ooga's Brother
@@ -126,7 +162,7 @@
           "value": 0.10
         },
         "minecraft:experience_reward": {
-          "on_death": 250
+          "on_death": "query.last_hit_by_player ? 50 + (query.equipment_count * Math.Random(1,3)) : 0"
         },
         "minecraft:loot": {
           "table": "loot_tables/entities/oogas_brother_drops.json"
@@ -134,7 +170,7 @@
         "minecraft:behavior.ranged_attack": {
           "attack_interval_min": 3,
           "attack_interval_max": 4,
-          "attack_radius": 30
+          "attack_radius": 40
         }
       },
       // Stray Marauder
@@ -150,7 +186,7 @@
           "max": 25
         },
         "minecraft:experience_reward": {
-          "on_death": 250
+          "on_death": "query.last_hit_by_player ? 50 + (query.equipment_count * Math.Random(1,3)) : 0"
         },
         "minecraft:behavior.ranged_attack": {
           "attack_interval_min": 1,
@@ -159,6 +195,69 @@
           "attack_interval_max": 2,
           "attack_radius": 15,
           "priority": 1
+        },
+        "minecraft:shooter": {
+          "def": "minecraft:arrow",
+          "aux_val": 19
+        }
+      },
+      // Nether King
+      "skin_9": {
+        "minecraft:variant": {
+          "value": 9
+        },
+        "minecraft:equipment": {
+          "table": "loot_tables/entities/nether_king_gear.json"
+        },
+        "minecraft:health": {
+          "value": 40,
+          "max": 40
+        },
+        "minecraft:experience_reward": {
+          "on_death": "query.last_hit_by_player ? 50 + (query.equipment_count * Math.Random(1,3)) : 0"
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/nether_king.json"
+        }
+      },
+      // Foxy
+      "skin_10": {
+        "minecraft:variant": {
+          "value": 10
+        },
+        "minecraft:equipment": {
+          "table": "loot_tables/entities/foxy_gear.json"
+        },
+        "minecraft:health": {
+          "value": 1,
+          "max": 1
+        },
+        "minecraft:experience_reward": {
+          "on_death": "query.last_hit_by_player ? 50 + (query.equipment_count * Math.Random(1,3)) : 0"
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/foxy.json"
+        },
+        "minecraft:movement": {
+          "value": 0.75
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+              },
+              "max_dist": 10, // Set proximity to trigger sound
+              "on_target_acquired": {
+                "event": "play_creepy_sound" // Custom event to trigger the sound
+              }
+            }
+          ],
+          "must_see": true
         }
       },
       // All Skeletons
@@ -419,7 +518,7 @@
                 "skin_1" // Cotton Candy
               ]
             },
-            "weight": 5
+            "weight": 4
           },
           {
             "add": {
@@ -451,7 +550,7 @@
                 "skin_5" // Creeper Archer
               ]
             },
-            "weight": 5
+            "weight": 3
           },
           {
             "add": {
@@ -459,7 +558,7 @@
                 "skin_6" // Creeper Archer Enchanted
               ]
             },
-            "weight": 2
+            "weight": 1
           },
           {
             "add": {
@@ -467,7 +566,7 @@
                 "skin_7" // Ooga's Brother
               ]
             },
-            "weight": 1
+            "weight": 3
           },
           {
             "add": {
@@ -476,6 +575,22 @@
               ]
             },
             "weight": 5
+          },
+          {
+            "add": {
+              "component_groups": [
+                "skin_9" // Nether King
+              ]
+            },
+            "weight": 2
+          },
+          {
+            "add": {
+              "component_groups": [
+                "skin_10" // Foxy
+              ]
+            },
+            "weight": 1
           }
         ]
       },
@@ -502,6 +617,24 @@
             "minecraft:ranged_attack"
           ]
         }
+      },
+      "play_creepy_sound": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "playsound effect.creepy.scream @s"
+            }
+          }
+        ]
+      },
+      "on_nearby_player": {
+        "sequence": [
+          {
+            "event": "minecraft:play_sound",
+            "target": "@a[r=10]",
+            "sound": "effect.creepy.scream"
+          }
+        ]
       }
     }
   }

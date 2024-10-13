@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "thecoberto:levitation_arrow",
+      "materials": {
+        "default": "arrow"
+      },
+      "textures": {
+        "default": "textures/items/arrow/levitation_arrow"
+      },
+      "geometry": {
+        "default": "geometry.arrow_img"
+      },
+      "animations": {
+        "move": "animation.arrow.target_rotation"
+      },
+      "scripts": {
+        "animate": [
+          "move"
+        ]
+      },
+      "render_controllers": [ "controller.render.arrow" ]
+    }
+  }
+}

@@ -9,7 +9,7 @@
       "minecraft:frame_count": 3,
       "minecraft:use_animation": "bow",
       "minecraft:display_name": {
-        "value": "§bFat Man§7\n\n§lInfo:§r§7\n-Massive explosion on impact\n-Works with mini-nukes"
+        "value": "Fat Man"
       },
       "minecraft:icon": {
         "texture": "fat_man"

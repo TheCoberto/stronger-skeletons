@@ -89,7 +89,8 @@
       "new:pickup_item":{
         "queue_command": {
           "command": [
-            "summon thecoberto:explosive ~~~"
+            "summon thecoberto:explosive ~~~",
+            "function effect/explosion"
           ]
         },
         "remove":{
